@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ourstory</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .Section1 {
+          height: 100vh;
+          width: 100%;
+          border: 1px solid black;
+          background-image: url(./images/ourstory/images1.jpg);
+          background-position: bottom;
+          background-size: cover;
+          padding: 20px;
+          top: 0;
+          left: 0;
+
+      }
+      .Navbar {
+          height: 100px;
+          width: 100%;
+          /* border: 2px solid red; */
+          background-color: rgba(0, 0, 0, 0.903);
+          position: fixed;
+          left: 0;
+          top: 0;
+      }
+
+      .logo {
+          width: 160px;
+          margin-top: 40px;
+          margin-left: 90px;
+          display: inline-block;
+          vertical-align: top;
+          /* border: 1px solid red; */
+          height: 70px;
+          cursor: pointer;
+      }
+      .Navul {
+          display: inline-block;
+          vertical-align: middle;
+          list-style: none;
+          margin-left: 200px;
+          margin-top: 40px;
+          color: white;
+          cursor: pointer;
+          font-size: 14px;
+      }
+
+      .Navlist{
+          list-style: none;
+          display: inline;
+          /* border: 1px solid red; */
+          width: max-content;
+      }
+      .Navlist a{
+          text-decoration: none;
+          color: white;
+          margin-left: 15px;
+      }
+      .icdiv {
+          height: 30px;
+          width: 90px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: 40px;
+          margin-left: 130px;
+      }
+      .fb {
+          color: white;
+          font-size: 16px;
+      }
+
+      .yt {
+          color: white;
+          font-size: 16px;
+          margin-left: 8px;
+      }
+
+      .ig {
+          color: white;
+          font-size: 16px;
+          margin-left: 8px;
+      }
+      .icon {
+          height: 25px;
+          width: 25px;
+          /* border: 1px solid red; */
+          border-radius: 30px;
+          background-image: url(./images/iconPLflag-03.svg);
+          background-position: center;
+          background-size: cover;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 60px;
+          margin-top: 35px;
+          cursor: pointer;
+      }
+      .h1 {
+          font-weight: lighter;
+          color: rgb(0,170,255);
+          font-size: 28px;
+
+      }
+
+      .Heading1 {
+          text-align: center;
+          margin-top: 160px;
+      }
+
+      .para1 {
+          color: white;
+          line-height: 45px;
+          font-size: 34px;
+          margin-top: 20px;
+          font-weight: lighter;
+      }
+      .Section2{
+          height: 75vh;
+          width: 100%;
+          /* border: 1px solid red; */
+      }
+      .h2{
+          color: black;
+          text-align: center;
+          margin-top: 60px;
+      }
+      .imgdiv2{
+          height: 380px;
+          width: 560px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: top;
+          background-image: url(./images/ourstory/images2.jpg);
+          background-position: center;
+          background-size: cover;
+          margin-top: 80px;
+          margin-left: 210px;
+      }
+      .textdiv2{
+          height: 380px;
+          width: 560px;
+          border: 1px solid rgb(204,204,204);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 80px;
+          margin-left: 30px;
+      }
+      .text2{
+          margin-left: 50px;
+          margin-top: 60px;
+          line-height: 25px;
+          color: rgb(105, 105, 105);
+      }
+      .Section3{
+          height: 70vh;
+          width: 100%;
+          /* border: 1px solid red; */
+      }
+      .h3{
+          color: black;
+          text-align: center;
+          margin-top: 60px;
+      }
+      .imgdiv3{
+          height: 380px;
+          width: 560px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: top;
+          background-image: url(./images/ourstory/images3.jpg);
+          background-position: center;
+          background-size: cover;
+          margin-top: 40px;
+          margin-left: 30px;
+      }
+      .textdiv3{
+          height: 380px;
+          width: 560px;
+          border: 1px solid rgb(204,204,204);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 40px;
+          margin-left: 210px;
+      }
+      .text3{
+          margin-left: 50px;
+          margin-top: 60px;
+          line-height: 25px;
+          color: rgb(105, 105, 105);
+      }
+      .Section4{
+          height: 75vh;
+          width: 100%;
+          /* border: 1px solid red; */
+      }
+      .h4{
+          color: black;
+          text-align: center;
+          margin-top: 60px;
+      }
+      .imgdiv4{
+          height: 380px;
+          width: 560px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: top;
+          background-image: url(./images/ourstory/images4.jpg);
+          background-position: center;
+          background-size: cover;
+          margin-top: 40px;
+          margin-left: 210px;
+      }
+      .textdiv4{
+          height: 380px;
+          width: 560px;
+          border: 1px solid rgb(204,204,204);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 40px;
+          margin-left: 30px;
+      }
+      .text4{
+          margin-left: 50px;
+          margin-top: 80px;
+          line-height: 25px;
+          color: rgb(105, 105, 105);
+      }
+      .Section5{
+          height: 75vh;
+          width: 100%;
+          /* border: 1px solid red; */
+          background-image: url(./images/ourstory/images5.jpg);
+          background-position: center;
+          background-size: cover;
+          text-align: center;
+      }
+      .imgdiv5{
+        height: 75vh;
+        width: 100%;
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 0.499);
+        padding: 1px;
+      }
+      .h5{
+          color: white;
+          text-align: center;
+          margin-top: 60px;
+      }
+      .textdiv5{
+          height: 380px;
+          width: max-content;
+          /* border: 1px solid rgb(204,204,204); */
+          margin-top: 40px;
+          margin-left: 400px;
+      }
+      .text5{
+          line-height: 25px;
+          color: white;
+          text-align: center;
+          font-size: medium;
+      }
+      
+      .Section6{
+          height: 80vh;
+          width: 1519px;
+          /* border: 1px solid black;    */
+          margin-left: -20px;
+          padding: 20px;
+      }   
+      .div6{
+          height: 603px;
+          width: 600px;
+          /* border: 1px solid red; */
+          background-image: url(./images/aircraft/images21.jpg);
+          background-position: center;
+          background-size: cover;
+          display: inline-block;
+          vertical-align: top;
+          margin-top: -20px;
+      }
+      .textdiv6{
+          height: 400px;
+          width: 730px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 110px;
+          margin-top: 80px;
+          font-size: 14px;
+      }
+      .hdng6{
+          color: rgb(61, 61, 61);
+      }
+      .personalinfo1{
+          height: 55px;
+          width: 720px;
+          /* border: 1px solid red; */
+          margin-top: 58px;
+      }
+      .frstname{
+          height: 55px;
+          width: 340px;
+          border: 1px solid rgb(211, 211, 211);
+          text-align: left;
+          display: inline-block;
+          vertical-align: top;
+      }
+      .frst{
+          margin-top: 15px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: black;
+          font-size: medium;
+      }
+      .emaildiv{
+          height: 55px;
+          width: 340px;
+          border: 1px solid rgb(211, 211, 211);
+          text-align: left;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 20px;
+      }
+      .emailt{
+          margin-top: 15px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: black;
+          font-size: medium;
+      }
+      .personalinfo2{
+          height: 55px;
+          width: 720px;
+          /* border: 1px solid red; */
+          margin-top: 23px;
+      }
+      .lstname{
+          height: 55px;
+          width: 340px;
+          border: 1px solid rgb(211, 211, 211);
+          text-align: left;
+          display: inline-block;
+          vertical-align: top;
+      }
+      .last{
+          margin-top: 15px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: black;
+          font-size: medium;
+      }
+      .phone{
+          height: 55px;
+          width: 340px;
+          border: 1px solid rgb(211, 211, 211);
+          text-align: left;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 20px;
+      }
+      .phonenmbr{
+          margin-top: 15px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: black;
+          font-size: medium;
+      }
+      .msgdiv{
+          height: 150px;
+          width: 700px;
+          border: 1px solid rgb(211, 211, 211);
+          text-align: left;
+          margin-top: 24px;
+      }
+      .msg{
+          margin-top: 15px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: rgb(72, 72, 72);
+          font-size: medium;
+      }
+      .btn6{
+          color: rgb(0,170,255);
+          margin-top: 10px;
+          font-size: 16px;
+          border: 1px solid rgb(0,170,255);
+          background-color: transparent;
+          height: 45px;
+          width: 90px;
+          margin-left: 600px;
+          font-weight: bold;
+          cursor: pointer;
+      }
+      .btn6:hover{
+          background-color: rgb(222, 225, 224);
+      }
+      .Section7{
+          height: 60vh;
+          width: 1537px;
+          /* border: 1px solid red; */
+          background-color: rgb(0, 20, 43);
+          margin: 0;
+          padding: 20px;
+          margin-left: -20px;
+          /* margin-top: -10px; */
+      }
+
+      .parent7{
+          height: 250px;
+          width: 700px;
+          /* border: 1px solid red; */
+          margin-top: 50px;
+          margin-left: 150px;
+      }
+
+      .line1 {
+          list-style: none;
+          font-size: 15px;
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .lgl {
+          color: white;
+          margin: 20px;
+          font-weight: bold;
+
+      }
+
+      .lgl2 {
+          color: rgb(172, 178, 177);
+          margin: 20px;
+          /* margin-top: 25px; */
+      }
+
+      .line2 {
+          list-style: none;
+          font-size: 15px;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 80px;
+      }
+
+      .abt {
+          color: white;
+          margin: 20px;
+          font-weight: bold;
+
+      }
+
+      .abt2 {
+          color: rgb(172, 178, 177);
+          margin: 20px;
+          /* margin-top: 25px; */
+      }
+
+      .line3 {
+          list-style: none;
+          font-size: 15px;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 80px;
+      }
+
+      .inf {
+          color: white;
+          margin: 20px;
+          font-weight: bold;
+
+      }
+
+      .inf3 {
+          color: rgb(172, 178, 177);
+          margin: 20px;
+          /* margin-top: 25px; */
+      }
+
+      .signuphd {
+          color: white;
+          font-size: 23px;
+          margin-left: 700px;
+          /* border: 1px solid red; */
+          width: max-content;
+          margin-top: -155px;
+          font-weight: lighter;
+      }
+
+      .email {
+          height: 50px;
+          width: 450px;
+          border: 1px solid red;
+          background-color: white;
+          border-radius: 8px;
+          margin-left: 700px;
+          margin-top: 40px;
+
+      }
+
+      .em {
+          margin-top: 14px;
+          margin-left: 10px;
+          font-weight: lighter;
+          color: rgb(172, 178, 177);
+      }
+
+      .su {
+          color: white;
+          margin-top: 10px;
+          font-size: 20px;
+          border: 2px solid white;
+          border-radius: 8px;
+          background-color: transparent;
+          height: 50px;
+          width: 450px;
+          margin-left: 700px;
+          cursor: pointer;
+
+      }
+
+      .su:hover {
+          background-color: rgb(140, 145, 147);
+          border: none;
+
+      }
+
+      .para2 {
+          margin-left: 700px;
+          font-size: 14px;
+          /* border: 1px solid red; */
+          width: max-content;
+          margin-top: 12px;
+          color: white;
+      }
+
+      .footer {
+          width: 160px;
+          margin-top: 50px;
+          /* border: 1px solid red; */
+          height: 70px;
+          cursor: pointer;
+      }
+
+      .borderbottom {
+          border-bottom: 1px solid rgb(0, 170, 239);
+          width: 1250px;
+          margin-top: -25px;
+      }
+
+      .para3 {
+          color: rgb(140, 145, 147);
+          font-size: 15px;
+          margin-top: 25px;
+      }
+
+      .icondiv2 {
+          height: 30px;
+          width: 150px;
+          /* border: 1px solid red; */
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: -25px;
+          margin-left: 1100px;
+      }
+
+      .fb2 {
+          color: white;
+          font-size: 20px;
+      }
+
+      .yt2 {
+          color: white;
+          font-size: 20px;
+          margin-left: 25px;
+      }
+
+      .ig2 {
+          color: white;
+          font-size: 20px;
+          margin-left: 25px;
+      }
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="logo">
+                <a href="./Flaris.html"><img src="./images/logoFlarisSVG.svg" alt=""></a>
+            </div>
+            <ul class="Navul">
+                <li class="Navlist"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="Navlist"><a href="./PilotingCourses.html">PILOTING COURSES</a></li>
+                <li class="Navlist"> <a href="./Purchase.html">PURCHASE</a></li>
+                <li class="Navlist"><a href="./news.html">NEWS</a></li>
+                <li class="Navlist"> <a href="./ourstory.html">OUR STORY</a></li>
+                <li class="Navlist"><a href="./pressroom.html">PRESS ROOM</a> </li>
+                <li class="Navlist"><a href="./contact.html">CONTACT</a> </li>
+            </ul>
+            <div class="icdiv">
+                <i class="fa-brands fa-facebook-f fb"></i>
+                <i class="fa-brands fa-youtube yt"></i>
+                <i class="fa-brands fa-instagram ig"></i>
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="Heading1">
+            <h1 class="h1">› FLARIS  ‹</h1>
+            <p class="para1">OUR STORY</p>
+        </div>
+    </div>
+    <div class="Section2">
+        <h1 class="h2"><span style="color: rgb(0,170,255);">›</span> FLARIS LAR 1  <span style="color: rgb(0,170,255);">‹</span></h1>
+        <div class="imgdiv2"></div>
+        <div class="textdiv2">
+            <p class="text2">The concept of a compact and economical personal jet capable
+                <br> of taking off from any aeroclub first appeared at Rafał
+                <br> Ładziński’s studio. For this Polish engineer, entrepreneur, and
+                <br> visionary leader it was clear that the world was waiting for such
+                <br> a machine. No one before has successfully combined the
+                <br> advantages of a jet engine with economic accessibility and ease
+                <br> of flying. Ładziński assembled a team of engineers and that is
+                <br> how this amazing cooperation and adventure involving many
+                <br> brilliant experts began. This idea of a personal jet swiftly
+                <br> conquered the hearts of thousands of enthusiasts across the
+                <br> globe who keep on supporting us.
+            </p>
+        </div>
+    </div>
+    <div class="Section3">
+        <h1 class="h3"><span style="color: rgb(0,170,255);">›</span> METAL-MASTER <span style="color: rgb(0,170,255);">‹</span></h1>
+        <div class="textdiv3">
+            <p class="text3">The first designs and prototypes of Flaris LAR 01 were
+                <br> developed at Metal-Masters specializing in modern
+                <br> technological lines in the automotive industry. The company,
+                <br> founded by Sylwia and Rafał Ładziński, became a natural
+                <br> incubator for innovative solutions for the new jet, and 22
+                <br> obtained patents seem to confirm this. The project has been
+                <br> co-funded by the European Union under the Innovative
+                <br> Economy Operation Programme since 2009. Metal-Masters
+                <br> invited to the project the leading Polish Institutes, including
+                <br> WAT (Military Technical Academy), ILOT, PW, ITWL.
+            </p>
+        </div>
+        <div class="imgdiv3"></div>
+    </div>
+    <div class="Section4">
+        <h1 class="h4"><span style="color: rgb(0,170,255);">›</span> FLARIS <span style="color: rgb(0,170,255);">‹</span></h1>
+        <div class="imgdiv4"></div>
+        <div class="textdiv4">
+            <p class="text4">The FLARIS company was established in 2012 for the purpose
+                <br> of serial production of LAR 01. It is also responsible for the
+                <br> promotion and sales of its products. Flaris brand is planning
+                <br> to expand to a wider variety of aircraft constructions.
+                <br> Innovation and dauntlessness in taking on demanding
+                <br> technological challenges, engineering, production, and
+                <br> popularization of affordable GA aircraft will be the unique
+                <br> features of the brand.
+            </p>
+        </div>
+    </div>
+    <div class="Section5">
+        <div class="imgdiv5">
+            <h1 class="h5"><span style="color: rgb(0,170,255);">›</span> THE FUTURE <span style="color: rgb(0,170,255);">‹</span></h1>
+            <div class="textdiv5">
+                <p class="text5">We believe in progress driven by innovation. We are not afraid of crossing the lines and thinking outside the
+                    <br> box. The future is a challenge we approach with passion and optimism.  We hope that the groundbreaking
+                    <br> construction of LAR 01 is just the first step in a magnificent journey to the top of the global aviation products
+                    <br> market.
+                </p>
+        </div>  
+        </div>
+    </div>
+    <div class="Section6">
+        <div class="div6"></div>
+        <div class="textdiv6">
+            <h1 class="hdng6"><span style="color: rgb(0,170,254);">› </span> GOT QUESTIONS? CONTACT US </h1>
+            <div class="personalinfo1">
+                <div class="frstname">
+                    <h4 class="frst"> First name </h4>
+                </div>
+                <div class="emaildiv">
+                    <h4 class="emailt"> E-mail </h4>
+                </div>
+            </div>
+            <div class="personalinfo2">
+                <div class="lstname">
+                    <h4 class="last"> Last name </h4>
+                </div>
+                <div class="phone">
+                    <h4 class="phonenmbr"> Phone number </h4>
+                </div>
+            </div>
+            <div class="msgdiv">
+                <h4 class="msg"> Your message </h4>
+            </div>
+            <button class="btn6">Send</button>
+        </div>
+    </div>
+    <div class="Section7">
+        <div class="parent7">
+            <ul class="line1">
+                <li class="lgl">Legal</li>
+                <li class="lgl2">GDPR</li>
+                <li class="lgl2">Privacy Policy</li>
+                <li class="lgl2">Cookies</li>
+            </ul>
+            <ul class="line2">
+                <li class="abt">About</li>
+                <li class="abt2">Press Room</li>
+                <li class="abt2">Manufacturer</li>
+            </ul>
+            <ul class="line3">
+                <li class="inf">Information</li>
+                <li class="inf3">FAQ</li>
+                <li class="inf3">News</li>
+            </ul>
+            <h2 class="signuphd">Sign up to our newsletter</h2>
+            <div class="email">
+                <h4 class="em">e-mail</h4>
+            </div>
+            <div class="signup">
+                <button class="su">Sign up</button>
+            </div>
+            <p class="para2">Form protected by reCAPTCHA and Google</p>
+            <div class="footer">
+                <img src="./images/LOGO_FLARIS_white-1.png" alt="">
+            </div>
+            <div class="borderbottom"></div>
+            <p class="para3">© 2022 Flaris. All rights reserved.</p>
+            <div class="icondiv2">
+                <i class="fa-brands fa-facebook-f fb2"></i>
+                <i class="fa-brands fa-youtube yt2"></i>
+                <i class="fa-brands fa-instagram ig2"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

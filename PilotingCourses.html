@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Piloting Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Section1 {
+            height: 110vh;
+            width: 100%;
+            border: 1px solid black;
+            background-image: url(./images/aircraft/images1.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 70px;
+            top: 0;
+            left: 0;
+
+        }
+        .Navbar {
+            height: 100px;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: rgba(0, 0, 0, 0.903);
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .logo {
+            width: 160px;
+            margin-top: 40px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            height: 70px;
+            cursor: pointer;
+        }
+        .Navul {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: none;
+            margin-left: 200px;
+            margin-top: 40px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .Navlist{
+            list-style: none;
+            display: inline;
+            /* border: 1px solid red; */
+            width: max-content;
+        }
+        .Navlist a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+        }
+        .icdiv {
+            height: 30px;
+            width: 90px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 40px;
+            margin-left: 130px;
+        }
+        .fb {
+            color: white;
+            font-size: 16px;
+        }
+
+        .yt {
+            color: white;
+            font-size: 16px;
+            margin-left: 8px;
+        }
+
+        .ig {
+            color: white;
+            font-size: 16px;
+            margin-left: 8px;
+        }
+        .icon {
+            height: 25px;
+            width: 25px;
+            /* border: 1px solid red; */
+            border-radius: 30px;
+            background-image: url(./images/iconPLflag-03.svg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 60px;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+        
+        .h1 {
+            font-weight: lighter;
+            color: rgb(0,170,255);
+            font-size: 30px;
+
+        }
+
+        .Heading1 {
+            text-align: center;
+            margin-top: 140px;
+        }
+
+        .para1 {
+            color: white;
+            line-height: 45px;
+            font-size: 40px;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .Section2{
+            height: 80vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .h2{
+            color: black;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .imgdiv2{
+            height: 500px;
+            width: 600px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/aircraft/images2.jpg);
+            background-position: center;
+            background-size: cover;
+           margin-top: 40px;
+        }
+        .textdiv2{
+            height: 500px;
+            width: 710px;
+            border: 1px solid rgb(204,204,204);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            margin-left: 110px;
+        }
+        .text2{
+            margin-left: 80px;
+            margin-top: 80px;
+            line-height: 33px;
+            color: rgb(81,82,84);
+        }
+        .note2{
+            margin-left: 80px;
+            margin-top: 30px;
+            line-height: 33px;
+            color: rgb(0,170,255);
+            cursor: pointer;
+        }
+        .Section3{
+            height: 80vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .h3{
+            color: black;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .imgdiv3{
+            height: 500px;
+            width: 600px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/aircraft/images3.jpg);
+            background-position: center;
+            background-size: cover;
+           margin-top: 40px;
+        }
+        .textdiv3{
+            height: 500px;
+            width: 710px;
+            border: 1px solid rgb(204,204,204);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            margin-left: 110px;
+        }
+        .text3{
+            margin-left: 80px;
+            margin-top: 80px;
+            line-height: 33px;
+            color: rgb(81,82,84);
+        }
+        .note3{
+            margin-left: 80px;
+            margin-top: 30px;
+            line-height: 33px;
+            color: rgb(0,170,255);
+            cursor: pointer;
+        }
+        .Section4{
+            height: 80vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .imgdiv4{
+            height: 603px;
+            width: 600px;
+            /* border: 1px solid red; */
+            background-image: url(./images/aircraft/images21.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cntctus{
+            height: 250px;
+            width: 350px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            color: black;
+            margin-top: 60px;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .para4{
+            /* margin-left: 100px; */
+            color: rgb(97, 96, 96);
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .btn4{
+            color: rgb(0,170,255);
+            margin-top: 40px;
+            font-size: 16px;
+            border: 1px solid rgb(0,170,255);
+            background-color: transparent;
+            height: 55px;
+            width: 220px;
+            margin-left: -20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn4:hover{
+            background-color: rgb(0,170,255);
+            color: white;
+        }
+        .Section5{
+            height: 60vh;
+            width: 1518px;
+            /* border: 1px solid red; */
+            background-color: rgb(0, 20, 43);
+            margin: 0;
+            padding: 20px;
+            margin-left: -20px;
+            /* margin-top: -10px; */
+        }
+
+        .parent5{
+            height: 250px;
+            width: 700px;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .line1 {
+            list-style: none;
+            font-size: 15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .lgl {
+            color: white;
+            margin: 20px;
+            font-weight: bold;
+
+        }
+
+        .lgl2 {
+            color: rgb(172, 178, 177);
+            margin: 20px;
+            /* margin-top: 25px; */
+        }
+
+        .line2 {
+            list-style: none;
+            font-size: 15px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 80px;
+        }
+
+        .abt {
+            color: white;
+            margin: 20px;
+            font-weight: bold;
+
+        }
+
+        .abt2 {
+            color: rgb(172, 178, 177);
+            margin: 20px;
+            /* margin-top: 25px; */
+        }
+
+        .line3 {
+            list-style: none;
+            font-size: 15px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 80px;
+        }
+
+        .inf {
+            color: white;
+            margin: 20px;
+            font-weight: bold;
+
+        }
+
+        .inf3 {
+            color: rgb(172, 178, 177);
+            margin: 20px;
+            /* margin-top: 25px; */
+        }
+
+        .signuphd {
+            color: white;
+            font-size: 23px;
+            margin-left: 700px;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-top: -155px;
+            font-weight: lighter;
+        }
+
+        .email {
+            height: 50px;
+            width: 450px;
+            border: 1px solid red;
+            background-color: white;
+            border-radius: 8px;
+            margin-left: 700px;
+            margin-top: 40px;
+
+        }
+
+        .em {
+            margin-top: 14px;
+            margin-left: 10px;
+            font-weight: lighter;
+            color: rgb(172, 178, 177);
+        }
+
+        .su {
+            color: white;
+            margin-top: 10px;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background-color: transparent;
+            height: 50px;
+            width: 450px;
+            margin-left: 700px;
+            cursor: pointer;
+
+        }
+
+        .su:hover {
+            background-color: rgb(140, 145, 147);
+            border: none;
+
+        }
+
+        .para2 {
+            margin-left: 700px;
+            font-size: 14px;
+            /* border: 1px solid red; */
+            width: max-content;
+            margin-top: 12px;
+            color: white;
+        }
+
+        .footer {
+            width: 160px;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+            height: 70px;
+            cursor: pointer;
+        }
+
+        .borderbottom {
+            border-bottom: 1px solid rgb(0, 170, 239);
+            width: 1250px;
+            margin-top: -25px;
+        }
+
+        .para3 {
+            color: rgb(140, 145, 147);
+            font-size: 15px;
+            margin-top: 25px;
+        }
+
+        .icondiv2 {
+            height: 30px;
+            width: 150px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -25px;
+            margin-left: 1100px;
+        }
+
+        .fb2 {
+            color: white;
+            font-size: 20px;
+        }
+
+        .yt2 {
+            color: white;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+
+        .ig2 {
+            color: white;
+            font-size: 20px;
+            margin-left: 25px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="logo">
+                <a href="./Flaris.html"><img src="./images/logoFlarisSVG.svg" alt=""></a>
+            </div>
+            <ul class="Navul">
+                <li class="Navlist"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="Navlist"><a href="./PilotingCourses.html">PILOTING COURSES</a></li>
+                <li class="Navlist"> <a href="./Purchase.html">PURCHASE</a></li>
+                <li class="Navlist"><a href="./news.html">NEWS</a></li>
+                <li class="Navlist"> <a href="./ourstory.html">OUR STORY</a></li>
+                <li class="Navlist"><a href="./pressroom.html">PRESS ROOM</a> </li>
+                <li class="Navlist"><a href="./contact.html">CONTACT</a> </li>
+            </ul>
+            <div class="icdiv">
+                <i class="fa-brands fa-facebook-f fb"></i>
+                <i class="fa-brands fa-youtube yt"></i>
+                <i class="fa-brands fa-instagram ig"></i>
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="Heading1">
+            <h1 class="h1">› FLARIS LAR01 ‹</h1>
+            <p class="para1">SIT AT THE CONTROLS</p>
+        </div>
+    </div>
+    <div class="Section2">
+        <h1 class="h2"><span style="color: rgb(0,170,255);">›</span> BECOME A PILOT <span style="color: rgb(0,170,255);">‹</span></h1>
+        <div class="imgdiv2"></div>
+        <div class="textdiv2">
+            <p class="text2">Get a taste of flying a jet and soar to the highest level of independence. The
+                <br> skills you will acquire during the course will open your way to astonishing jet
+                <br> flights. The culmination of the course is a pilot’s license allowing you to fly
+                <br> Flaris LAR 01 single-handedly at any distance. Also, upon completing the
+                <br> course, you will receive a membership in our elite association which is
+                <br> admired worldwide.
+            </p>
+            <h4 class="note2">Start the course at the Aviation Academy <br>
+                and become a Flaris pilot</h4>
+        </div>
+        
+    </div>
+    <div class="Section3">
+        <h1 class="h3"><span style="color: rgb(0,170,255);">›</span> BECOME A INSTRUCTOR <span style="color: rgb(0,170,255);">‹</span></h1>
+        <div class="imgdiv3"></div>
+        <div class="textdiv3">
+            <p class="text3">Broaden your professional skills and become a flight-instructor of an aircraft
+                <br> that piques interest across the entire world. Getting a flight instructor’s
+                <br> certificate of Flaris aircraft may turn out to be the most significant and
+                <br> gratifying decision in your career. If you have not steered a jet-propelled
+                <br> aircraft before, our course will certainly thrill you with unforgettable
+                <br> impressions of flying this high-performance jet.
+            </p>
+            <h4 class="note3">More Information</h4>
+        </div>
+        
+    </div>
+    <div class="Section4">
+        <div class="imgdiv4"></div>
+        <div class="cntctus"><span style="color: rgb(0,170,255);">›</span> CONTACT US
+            <p class="para4">Go to the website of the Aviation Academy <br>
+                and get a license to fly Flaris</p>
+            <button class="btn4">Become a Pilot</button>
+        </div>
+    </div>
+    <div class="Section5">
+        <div class="parent5">
+            <ul class="line1">
+                <li class="lgl">Legal</li>
+                <li class="lgl2">GDPR</li>
+                <li class="lgl2">Privacy Policy</li>
+                <li class="lgl2">Cookies</li>
+            </ul>
+            <ul class="line2">
+                <li class="abt">About</li>
+                <li class="abt2">Press Room</li>
+                <li class="abt2">Manufacturer</li>
+            </ul>
+            <ul class="line3">
+                <li class="inf">Information</li>
+                <li class="inf3">FAQ</li>
+                <li class="inf3">News</li>
+            </ul>
+            <h2 class="signuphd">Sign up to our newsletter</h2>
+            <div class="email">
+                <h4 class="em">e-mail</h4>
+            </div>
+            <div class="signup">
+                <button class="su">Sign up</button>
+            </div>
+            <p class="para2">Form protected by reCAPTCHA and Google</p>
+            <div class="footer">
+                <img src="./images/LOGO_FLARIS_white-1.png" alt="">
+            </div>
+            <div class="borderbottom"></div>
+            <p class="para3">© 2022 Flaris. All rights reserved.</p>
+            <div class="icondiv2">
+                <i class="fa-brands fa-facebook-f fb2"></i>
+                <i class="fa-brands fa-youtube yt2"></i>
+                <i class="fa-brands fa-instagram ig2"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
